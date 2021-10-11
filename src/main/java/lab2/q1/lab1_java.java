@@ -23,7 +23,7 @@ public class lab1_java {
     short temperature;           //short data type
     temperature = -200;
     byte b = 10;                 //byte data type
-		 
+    
 
      
        
