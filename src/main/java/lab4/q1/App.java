@@ -10,115 +10,47 @@ package lab4.q1;
  * @author maron
  */
 public class App {
- 
- 
+
     public void run() {
-        
-        Person joe=new Person();
+
+        Person joe = new Person();
         joe.setFirstname("Joe");
-        Person jill=new Person("Jill","Potter");
-        Person pete=new Person("Peter","Apostle", 56);
-        Person noel =new Person(21, 180, 0,"Noel","Student",'M');
-        Person george=new Person(32, 173, 0,"George","Student",'M');
-        Person mary =new Person(41, 162, 48.2,"Mary","Teacher",'F');
-        Person gilles=new Person(35, 176, 61,"Gilles","Student",'F');
+        Person jill = new Person("Jill", "Potter");
+        Person pete = new Person("Peter", "Apostle", 56);
+        Person P1 = new Person(21, 180, 85, "Noel", "Student", 'M');
+        Person P2 = new Person(32, 173, 81, "George", "Student", 'M');
+        Person P3 = new Person(41, 162, 48.2, "Mary", "Teacher", 'F');
+        Person P4 = new Person(21, 180, 85, "Noel", "Student", 'M');
+
+        System.out.println("Joe=" + joe);
+        System.out.println("Pete=" + pete);
+        System.out.println("Jill=" + jill);
+
+        System.out.println(P1.getAge() + " " + P1.getHeight() + " " + P1.getWeight() + " " + P1.getFirstname() + " " + P1.getLastname() + " " + P1.getGender());
+        System.out.println(P2.getAge() + " " + P2.getHeight() + " " + P2.getWeight() + " " + P2.getFirstname() + " " + P2.getLastname() + " " + P2.getGender());
+        System.out.println(P3.getAge() + " " + P3.getHeight() + " " + P3.getWeight() + " " + P3.getFirstname() + " " + P3.getLastname() + " " + P3.getGender());
+        System.out.println(P4.getAge() + " " + P4.getHeight() + " " + P4.getWeight() + " " + P4.getFirstname() + " " + P4.getLastname() + " " + P4.getGender());
     
+         
         
-        
-        
-        
-System.out.println("Joe="+joe);
-System.out.println("Pete="+pete);
-System.out.println("Jill="+jill);
- 
-//System.out.println(joe.getAge()+" "+joe.getHeight()+" "+ joe.getWeight()+" "+joe.getFirstname()+" "+ joe.getLastname()+" "+ joe.getGender());
-System.out.println(george.getAge()+" "+ george.getHeight() +" "+george.getWeight()+" "+ george.getFirstname()+" "+ george.getLastname()+" "+george.getGender());
-System.out.println(mary.getAge()+" "+ mary.getHeight()+" "+ mary.getWeight()+" "+mary.getFirstname()+" "+ mary.getLastname()+" "+mary.getGender());
-System.out.println(gilles.getAge()+" "+ gilles.getHeight()+" "+ gilles.getWeight()+" "+ gilles.getFirstname()+" "+ gilles.getLastname()+" "+ gilles.getGender());
-System.out.println(noel.getAge()+" "+ noel.getHeight()+" "+ noel.getWeight()+" "+ noel.getFirstname()+" "+ noel.getLastname()+" "+ noel.getGender());
+
+        // same
+      if (P1.equals(P2)) {
+            System.out.println("P1 and P2 are the same");
+        } else {
+            System.out.println("P1 and P2 are different people");
+        }
+        if (P1.equals(P3)) {
+            System.out.println("P1 and P3 are the same");
+        } else {
+            System.out.println("P1 and P3 are different people");
+        }
+
+        if (P1.equals(P4)) {
+            System.out.println("P1 and P4 are the same");
+        } else {
+            System.out.println("P1 and P4 are different people");
+        }
 
     }
 }
-        
-   
-
-
-        
-        //  creating objects
-       /* Person susan=new Person();
-        susan.setFirstname("Susan");
-        susan.setAge(10);
-        
-        System.out.println("Susans first name is "+susan.getFirstname());
-        
-        Person susan2=new Person("Susan2", 30);
-        
-        
-        System.out.println("Susans first name is "+susan2.getFirstname());
-        
-        System.out.println("there are "+countPeople()+ " people created");
-        
-        
-        
-        System.out.println("All about susan: "+susan);
-        
-        int num=10;
-        if(num == 10)// checking for equality
-            System.out.println("num = 10");
-        
-
-        Person george=new Person("George", 33, 12345L);
-        Person george2=new Person("George", 33, 12345L);
-        Person george3=new Person("George", 33, 123456L);
-        Person george4=george2;
-        Person george5=george3;
-        
-        // are george and george2 the same person?
-        if(george == george2) // here we are comparing reference NOT objects
-            System.out.println("George and George2 are the same");
-        else
-            System.out.println("George and George2 are different people");
-
-        // previous example doesnt work.  fix it
-        if(george.equals(george2)) // here we are comparing objects not references!
-            System.out.println("George and George2 are the same");
-        else
-            System.out.println("George and George2 are different people");
-
-        // not same
-        if(george4 == george) 
-            System.out.println("George4 and George are the same");
-        else
-            System.out.println("Georg4e and George are different people");
-
-        // same
-        if(george4 == george2) 
-            System.out.println("George4 and George are the same");
-        else
-            System.out.println("George4 and George are different people");
-
-        // same
-        if(george4.equals(george2)) 
-            System.out.println("George4 and George are the same");
-        else
-            System.out.println("George4 and George are different people");
-
-       if(george4.equals(george) )
-            System.out.println("George4 and George are the same");
-        else
-            System.out.println("Georg4e and George are different people");
- 
-    }
-    
-    public int countPeople(){
-        return Person.getCount();
-    }
-*/
-
-
-
-
-     
-     
-     
-

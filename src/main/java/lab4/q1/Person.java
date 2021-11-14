@@ -45,21 +45,21 @@ public class Person extends Object implements java.io.Serializable {  // make it
     public Person(int age, double height,double weight ) {
         this.age = age;
         this.height=height;
-        this.height=weight;
+        this.weight=weight;
         
     }
     
     public Person(int age, double height,double weight,String firstname ) {
         this.age = age;
         this.height=height;
-        this.height=weight;
+        this.weight=weight;
         this.firstname = firstname;
     }
     
      public Person(int age,double height, double weight, String firstname, String lastname ) {
         this.age = age;
         this.height=height;
-        this.height=weight;
+        this.weight=weight;
         this.firstname = firstname;
         this.lastname = lastname;
     }
@@ -67,7 +67,7 @@ public class Person extends Object implements java.io.Serializable {  // make it
      public Person(int age,double height, double weight, String firstname, String lastname, char gender) {
         this.age = age;
         this.height=height;
-        this.height=weight;
+        this.weight=weight;
         this.firstname = firstname;
         this.lastname = lastname;
         this.gender=gender;
