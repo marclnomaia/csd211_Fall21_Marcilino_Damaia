@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lab4.q2;
+package lab4b_UniTest;
 
-import lab4.q1.Person;
+import lab4.q2.*;
+
 
 /**
  *
@@ -52,15 +53,8 @@ public class Car extends Object implements java.io.Serializable {  // make it se
         this.vin = vin;
     }
 
-    public Car(String make) {
-        this.make=make;
-    }
-
-    @Override
-    public String toString() {
-        return getMake() + " " + getModel();
-
-    }
+    
+    
 
     public String getMake() {
         return make;
@@ -92,6 +86,28 @@ public class Car extends Object implements java.io.Serializable {  // make it se
 
     public void setVin(long vin) {
         this.vin = vin;
+    }
+    
+    @Override
+    public String toString(){
+        String s="";
+        s+= "Make : " + getMake() +
+            "\nModel : " + getModel() +
+            "\nYear : " + getYear() +
+            "\nVIN : " + getVin() + "\n";
+        Person owner = getOwner();
+        if(owner!=null)
+            s+=owner.toString();
+        return s;
+    }
+
+    @Override
+    public boolean equals(Object o){
+        if(!(o instanceof Car))
+            return false;
+        if(this == o)
+            return true;
+        return getVin() == ((Car)o).getVin();
     }
 
     /**
