@@ -11,7 +11,7 @@ import java.time.LocalDate;
  *
  * @author maron
  */
-public class Person {
+public class Person1 {
    
     public enum Sex {
         MALE, FEMALE
@@ -22,7 +22,7 @@ public class Person {
     private Sex gender;
     private String emailAddress;
 
-    public Person(String name, LocalDate birthday, Sex gender, String emailAddress) {
+    public Person1(String name, LocalDate birthday, Sex gender, String emailAddress) {
         this.name = name;
         this.birthday = birthday;
         this.gender = gender;

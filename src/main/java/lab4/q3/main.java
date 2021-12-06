@@ -12,7 +12,7 @@ package lab4.q3;
  *
  * @author maron
  */
-public class main {
+public class Main {
    
 public static void main(String[] args) throws Exception {
         App app=new App();

@@ -11,7 +11,7 @@ import lab4.q2.App;
  *
  * @author maron
  */
-public class main {
+public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
         new App().run();

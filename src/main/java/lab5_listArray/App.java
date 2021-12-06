@@ -11,7 +11,8 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
+
+
 
 /**
  *
@@ -34,17 +35,17 @@ public class App {
         }
         System.out.println("-// traverse method 2 - with aggregate methods------------------------------");
 
-        Person[] pres = {
-            new Person("George W Bush=> " , LocalDate.of( 1946, Month.JULY , 6), Person.Sex.MALE, "  newsadmin@whitehouse.gov"),
-            new Person("Barack Obama=> " , LocalDate.of( 1961, Month.AUGUST , 4), Person.Sex.MALE, "  newsadmin@whitehouse.gov"),
-            new Person("Donald Trump=> ", LocalDate.of( 1946, Month.JUNE , 14), Person.Sex.MALE, "  newsadmin@whitehouse.gov"),
-            new Person("Joe Biden=> ", LocalDate.of( 1942, Month.NOVEMBER , 20), Person.Sex.MALE, "  newsadmin@whitehouse.gov")
+        Person1[] pres = {
+            new Person1("George W Bush=> " , LocalDate.of( 1946, Month.JULY , 6), Person1.Sex.MALE, "  newsadmin@whitehouse.gov"),
+            new Person1("Barack Obama=> " , LocalDate.of( 1961, Month.AUGUST , 4), Person1.Sex.MALE, "  newsadmin@whitehouse.gov"),
+            new Person1("Donald Trump=> ", LocalDate.of( 1946, Month.JUNE , 14), Person1.Sex.MALE, "  newsadmin@whitehouse.gov"),
+            new Person1("Joe Biden=> ", LocalDate.of( 1942, Month.NOVEMBER , 20), Person1.Sex.MALE, "  newsadmin@whitehouse.gov")
         };
 
-        List<Person> presidents = java.util.Arrays.asList(pres);
+        List<Person1> presidents = java.util.Arrays.asList(pres);
 
         // iterate using for - each
-        for (Person president : presidents) {
+        for (Person1 president : presidents) {
             System.out.println(president.getName()+" "+ president.getBirthday()+" "+ president.getGender()+" "+ president.getEmailAddress());
         }
         
@@ -58,6 +59,12 @@ public class App {
     void run() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    
+
+    
+
+    
 
     
 }
