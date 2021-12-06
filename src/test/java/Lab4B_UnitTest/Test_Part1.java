@@ -10,6 +10,7 @@ import lab4b_UniTest.Car;
 import org.junit.Before;
 import org.junit.Test;
 
+
 /**
  *
  * @author students
@@ -23,10 +24,7 @@ public class Test_Part1 {
 
     @Before //runs everytime BEFORE a test
     public void before() {
-        //System.out.println("before()");
-//    @After //runs every time after every test
-//    public void tearDown() {
-//    }
+        
     }
 
     @Test
@@ -60,11 +58,5 @@ public class Test_Part1 {
     }
 }
 
-//    }
-//    @Test
-//    public void test9() {
-//        app.deleteCar(car2);
-//        Car foundCar = app.findCar(car2);
-//        assertNull(foundCar);
-//    }
+
 

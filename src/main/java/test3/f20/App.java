@@ -9,20 +9,19 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
 /**
  *
  * @author maron
  */
 public class App {
 
-    
     private final int numCourse = 10;
     public Course[] courses = new Course[numCourse];
     private Scanner input;
     private int currentIndex;
 
     public void run() throws Exception {
+
         Course[] Course = new Course[10];
         boolean quit = false;
         String mainMenu = ""
@@ -34,26 +33,27 @@ public class App {
             input = new Scanner(System.in);
 
             System.out.println(mainMenu);
-        
-            int choice=input.nextInt();
 
-            switch(choice){
+            int choice = input.nextInt();
+
+            switch (choice) {
                 case 1:
                     try {
-                        addCourse();
-                    } catch (Exception e) {
-                    Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, e);
-                    }
-                    break;
+                    addCourse();
+                } catch (Exception ex) {
+                    Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                break;
                 case 2:
                     editCourse();
                     break;
                 case 3:
                     listCourse();
+                    System.out.println();
                     break;
-                
+
                 default:
-                   // System.out.println("Enter a Choice:");
+                    System.out.println("wrong Choice:");
             }
 
         }
@@ -63,32 +63,31 @@ public class App {
     private static void editCourse() {
         System.out.println("");
     }
-    
 
-    private void addCourse()  {
+    private void addCourse() {
         try {
             Scanner input = new Scanner(System.in);
             System.out.println("Enter name: ");
             String name = input.next();
             System.out.println("Enter code: ");
-            int code = input.nextInt();
+            String code = input.next();
             System.out.println("Enter date: ");
-            int startDate = input.nextInt();
+            String startDate = input.next();
             System.out.println("Enter number of student: ");
             int NumOfStudents = input.nextInt();
             System.out.println("Enter count: ");
             int count = input.nextInt();
-        
-            Course course = new Course(name,code,startDate, NumOfStudents, count);
-         
+
+            Course course = new Course(name, code, startDate, NumOfStudents, count);//call the constructors
+
             courses[currentIndex] = course;
             currentIndex++;
 
-        }catch (Exception e) {
-          
-        
-    }}
-         
+        } catch (Exception ex) {
+
+        }
+    }
+
     private void listCourse() {
 
         System.out.println("\nList all courses");
@@ -99,25 +98,9 @@ public class App {
             if (courses[i] == null) {
                 break;
             }
-            System.out.println(i+" "+ courses[i]);
+            System.out.println(i + " " + courses[i]);
 
         }
     }
-    
-    }
-    
 
-            
-            
-            
-            
-            
-
-           
-     
-
-    
-
-    
-
-   
+}
