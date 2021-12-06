@@ -3,12 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package test3.f20;
+package lab5_listArray;
 
 /**
  *
  * @author maron
  */
-class p {
-    
+public class Main {
+    public static void main(String[] args) throws Exception {
+        App app=new App();
+        app.run();
+    }
 }
